@@ -12,6 +12,34 @@ header{
   background:#020617;
 }
 
+header h2 {
+  font-weight: 600;
+  font-size:40px;
+}
+nav{
+  background:#8601f3;
+  border:none;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  padding:12px 20px;
+  box-shadow: 0px 7px 7px rgba(75, 0, 136, 0.767);
+}
+nav a{
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(255, 255, 255); 
+  font-weight: bolder;
+  border-radius: 5px;
+  transition-duration: 0.8s;
+}
+
+nav a:hover{
+color:rgb(255, 255, 255);
+background-color: #5308cc;
+}
+
+
 .container{
   padding:60px;
 }
@@ -26,14 +54,6 @@ header{
 
 .card:hover{
   transform:translateY(-5px);
-  box-shadow:0 0 15px #3b82f6;
+  box-shadow:0 0 15px #8003d3;
 }
 
-button{
-  background:#3b82f6;
-  border:none;
-  padding:12px 20px;
-  color:white;
-  border-radius:8px;
-  cursor:pointer;
-}
