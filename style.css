@@ -9,11 +9,21 @@ box-sizing:border-box;
 /* ===== BODY ===== */
 body{
 font-family: system-ui, -apple-system, sans-serif;
-background:#0f172a;
 color:#ffffff;
 line-height:1.6;
 margin: 0;
+background-color: #140c25; /* base roxa escura */
+background-image:
+    linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,0.02) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.02) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.02) 75%);
+
+background-size: 20px 20px; /* menor que antes */
+background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+color: white;
 }
+
 
 header{
   padding:0px;
@@ -90,7 +100,7 @@ font-size: 1rem;
   height: 150px;
   border-radius: 50%; 
   object-fit: cover;  
-  border: 4px solid #a855f7; 
+  border: 4px solid #9021f8; 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -104,7 +114,7 @@ font-size: 1rem;
 
 .icon {
   background: #000;
-  color: #a855f7;
+  color: #9026f3;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -117,7 +127,7 @@ font-size: 1rem;
 }
 
 .icon:hover {
-  background: #a855f7;
+  background: #9729ff;
   color: white;
   transform: scale(1.1);
 }
@@ -126,7 +136,7 @@ font-size: 1rem;
 .btn-contato {
   display: inline-block;
   padding: 12px 30px;
-  background: linear-gradient(90deg, #a855f7, #7e22ce);
+  background: linear-gradient(90deg, #9525ff, #7e22ce);
   color: white;
   border-radius: 10px;
   text-decoration: none;
@@ -177,6 +187,10 @@ background:#1e293b;
 padding:25px;
 border-radius:14px;
 transition:.3s;
+}
+
+.card ul {
+  padding-left: 20px; 
 }
 
 .card:hover{
