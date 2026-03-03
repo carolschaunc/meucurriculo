@@ -26,26 +26,29 @@ body{
 
 /* HEADER */
 header{
-  padding:0px;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(150, 0, 255, 0.15);
-  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
+
 
 /* NAV*/
 nav{
-  background:#8601f3;
+  background: rgba(117, 31, 230, 0.726);
+  backdrop-filter: blur(12px);
   border:none;
   color:white;
   border-radius:8px;
   cursor:pointer;
-  box-shadow: 0px 7px 7px rgba(75, 0, 136, 0.418);
   top: 0px;
   width:100%;
   padding:5px 25%;
   display:flex;
   justify-content:space-between;
+  align-items:center;
   z-index:1000;
 }
 
@@ -65,13 +68,13 @@ nav a:hover{
 
 /* HERO */
 .hero{
-  height:60vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding: 120px 20px;
+   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px 60px 20px;
 }
 
 .hero h1{
@@ -107,7 +110,6 @@ h1 span {
   border: 4px solid #9021f8; 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
-  margin-top: 20px;
 }
 
 .perfil img:hover {
